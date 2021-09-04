@@ -113,19 +113,20 @@ section {
 }
 
 .primary-text h3 {  
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-size: 30px;
     padding: 0 0 0 30px;
 }
 
 .primary-text p {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-size: 20px;
     padding: 0 0 0 30px;
 }
 
 .about {
     margin: 20px auto;
+    padding-top: 25px;
     padding-bottom: 10px;
     width: 80%;
     display: flex;
