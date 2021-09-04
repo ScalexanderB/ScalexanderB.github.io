@@ -7,6 +7,10 @@
 * This is a personal portfolio created to showcase my current and future projects.
 * It includes a little information about myself, how to contact me and what I've done.
 
+# Application Url:
+
+* https://scalexanderb.github.io/
+
 # Steps I took:
 
 * First I had created a rough wireframe for me to work off of
