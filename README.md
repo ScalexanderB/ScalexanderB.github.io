@@ -22,3 +22,5 @@
 
 ## Application Screenshot:
 
+![Screen Capture 010 - Scott Bradley's Coding Portfolio - scalexanderb github io](https://user-images.githubusercontent.com/88293666/132107684-41716836-a50a-445a-aaa2-a2bb8715f017.jpg)
+
