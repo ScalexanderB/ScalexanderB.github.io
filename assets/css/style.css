@@ -23,21 +23,20 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     }
 
-header h1 {
-    font-weight: bold;
-    font-size: 52px;
-    color: var(--primary-color);
-    margin: 0;
+.logo {
+    display: flex;
+    margin-right: auto;
+    width: 75px;
+    height: 75px;
 }
 
 header a {
     text-decoration: none;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    display: inline-block;
 }
 
 header a:hover {
@@ -66,8 +65,12 @@ header nav ul li a {
 
 /* About me style */
 
+section, footer {
+    padding: 30px 0 20px 0;
+}
+
 section {
-    padding: 60px;
+    padding: 30px 0 20px 0;
 }
 
 .primary-section {
@@ -80,7 +83,7 @@ section {
     border-bottom: 3px solid;
     padding-bottom: 10px;
     text-align: center;
-    margin: 0 auto 20px auto;
+    margin: 10px auto 20px auto;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -105,25 +108,30 @@ section {
     border-radius: 25px;
 }
 
-.about-bio {
+.primary-text {
     flex: 12;
 }
 
-.about-bio p {
+.primary-text h3 {  
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding: 0 0 0 30px;
+}
+
+.primary-text p {
     color: var(--secondary-color);
     font-size: 20px;
-    padding: 30px;
+    padding: 0 0 0 30px;
 }
 
 .about {
-    margin: 50px auto;
-    padding-bottom: 50px;
+    margin: 20px auto;
+    padding-bottom: 10px;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 3px solid var(--secondary-color);
 }
 
 /* About me style end */
@@ -148,20 +156,31 @@ section {
     flex:25%
 }
 
-.projects {
-    width: 100%;
+.projects-bottom {
+    width: 70%;
+    height: 10%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.projects-top {
+    width: 70%;
+    height: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
 }
 
 .project-card {
     margin: 20px;
     background: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     flex: 1;
     border-radius: 10px;
+    height: 20%;
 }
 
 .project-card img {
@@ -169,6 +188,12 @@ section {
     height: auto;
     padding: 20px;
     border-radius: 20px;
+    opacity: 0.5;
+}
+
+.project-card img:hover {
+    opacity: 1;
+    transition-delay: 10ms;
 }
 
 .project-info {
@@ -177,41 +202,161 @@ section {
     flex-wrap: wrap;
     padding: 25px;
     line-height: 1.3;
+    align-content: center;
+    text-align: center;
 }
 
 .project-info h3 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 0px;
     text-align: center;
+}
+
+.projects-top .project-info{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 0px;
+    display:inline;    
 }
 
 .project-info p {
     font-size: 17px;
     text-align: center;
-    padding: 50px;
-    margin: auto;
-}
-
-.button {
-    display: flex;
-    flex-wrap: wrap;
-    display: inline;
-    justify-content: space-between;
-    border-radius: 5px;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 20px;
-    background-size: contain;
     padding: 10px;
-    text-decoration: none;
-    margin: auto;  
-    border: 2px solid var(--primary-color);  
+    margin-bottom: 10px;
 }
 
-.button:hover {
-    border: 2px solid var(--secondary-color);
-    background: var(--primary-color);
-    color: var(--secondary-color);
+/* Projects Style End */
+
+/* Contact me section start */
+
+.contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
+
+.contact-link img {
+    height: 50px;
+    width: 50px;
+}
+
+.contact-link a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.contact-me-text {
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    
+    header .logo {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+ 
+    header nav ul li a {
+        font-size: 20px;
+    }
+ 
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+ 
+    .about {
+        text-align: center;
+    }
+ 
+    .section-title1, .section-title2 {
+        width: 80%;
+    }
+
+    .secondary-section {
+        flex: 0 70%;
+    }
+ 
+ }
+ 
+ /* MEDIA QUERY FOR TABLETS AND SMALLER */
+ @media screen and (max-width: 768px) {
+     section {
+         padding: 30px 15px;
+     }
+ 
+     .about {
+         flex: 1 100%;
+         text-align: center;
+     }
+ 
+     .about-info {
+         flex: 2 100%;
+         text-align: center;
+         justify-content: center;
+     }
+ 
+     .about-img {
+         flex: 0 32%;
+         margin-right: 0;
+         margin-top: 15px;
+         margin-bottom: 15px;
+     }
+ 
+     .primary-text {
+         flex: 100%;
+     }
+     
+ }
+ 
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+ 
+     .section-title1, .section-title2 {
+         width: 95%;
+     }
+
+     .about-img {
+         width: 100%;
+     }
+ 
+     .about p {
+         width: 100%;
+     }
+      
+     .projects-top {
+         flex: 0 100%;
+     }
+
+     .projects-bottom {
+        flex: 0 100%;
+    }
+ 
+     .contact-me-text {
+         text-align: center;
+     }
+ 
+     .contact-link > * {
+         flex: 0 100%;
+     }
+  }
 

@@ -11,9 +11,9 @@
 <body>
     <!-- Header + Navigation Bar -->
     <header>
-        <h1>
-            Scott Bradley
-        </h1>
+        <div class="logo">
+            <img src="assets/images/SB_v3.png" alt="Scott Bradley Logo"/>
+        </div>
         <nav>
             <ul>
                 <li>
@@ -41,9 +41,11 @@
                     <div class="about-img">
                     <img src="assets/images/LinkedIn picture.jpg" alt="Scott Bradley headshot"/>
                     </div>
-                    <div class="about-bio">        
-                        <p>
-                            Hi, my name is Scott. 
+                    <div class="primary-text">        
+                        <h3>
+                            Hi, my name is Scott Bradley.
+                        </h3>
+                        <p>            
                             </br>
                             I'm an aspiring web developer with a passion for problem solving. I'm currently studying Web Development at UofT SCS, and I'm  
                         </p>
@@ -63,41 +65,38 @@
                 <h2 class="section-title2">My Projects</h2>
             </div>
         </div>
-        <div class="projects">
+        <div class="projects-top">
             <article class="project-card">
-                <img src="assets/images/Screen Capture 005 - Run Buddy - scalexanderb.github.io.jpg" alt="Run Buddy Landing Page"/>
-                <div class="project-info">
-                    <h3 class="project-name">Run Buddy</h3>
-                    <p class="project-desc">
-                        First project developed using HTML and CSS.
-                    </p>
-                    <a class="button" href="https://github.com/ScalexanderB/run-buddy"target="_blank">
-                        Github Repo
-                    </a>
-                    <a class="button" href="https://scalexanderb.github.io/run-buddy/"target="_blank">
-                        Landing Page
-                    </a>
-                </div>
+                <a href="https://scalexanderb.github.io/run-buddy/"target="_blank">
+                    <img src="assets/images/Screen Capture 005 - Run Buddy - scalexanderb.github.io.jpg" alt="Run Buddy Landing Page"/>
+                </a>    
+                    <div class="project-info">
+                        <h3 class="project-name">Run Buddy</h3>
+                            <p class="project-desc">
+                                First project developed using HTML and CSS.
+                            </p>                 
+                    </div>
             </article>
-            
+        </div>
+        <div class="projects-bottom">    
             <article class="project-card">
-                <img src="assets/images/Screen Capture 006 - Horiseon Marketing Agency - scalexanderb.github.io.jpg" alt="Horiseon Landing Page"/>
-                <div class="project-info">
-                    <h3 class="project-name">Horiseon</h3>
-                    <p class="project-desc">
+                <a class="button" href="https://scalexanderb.github.io/Refactor-Assignment-Horiseon/"target="_blank">
+                    <img src="assets/images/Screenshot 2021-09-03 193021 (2).png" alt="Horiseon Landing Page"/>
+                </a>
+                    <div class="project-info">
+                        <h3 class="project-name">Horiseon</h3>
+                            <p class="project-desc">
                         First challenge completed about refactoring and consolidating.    
-                    </p>
-                    <a class="button" href="https://github.com/ScalexanderB/Refactor-Assignment-Horiseon"target="_blank">Github Repo</a>
-                    <a class="button" href="https://scalexanderb.github.io/Refactor-Assignment-Horiseon/"target="_blank">Landing Page</a>
-                </div>
+                            </p>
+                    </div>
             </article>
             <article class="project-card">
                 <img src="assets/images/more coming soon.png" alt="More coming soon"/>
                 <div class="project-info">
                     <h3 class="project-name">More coming soon!</h3>
-                    <p class="project-desc">Stay tuned for future projects!</p>
+                    <p class="project-desc">Please stay tuned for more exciting projects in the near future!</p>
                 </div>
-            </article>
+            </article>    
         </div>
     </section>
 
@@ -105,14 +104,19 @@
 
     <!-- Contact me -->
 
-    <footer id="contact-me" class="contact">
+    <footer id="contact-me" class="primary-section">
         <div>
             <div>
-                <h2>Contact Me</h2>
+                <h2 class="section-title1">Contact Me</h2>
             </div>
         </div>
-        <div class=contact-link>
-            <div>
+        <div class="contact-me-text">
+            <p>
+                Click the following links to get in touch!
+            </p>
+        </div>    
+            <div class="contact-link">
+                <div class= "contact-link-img">
                 <a href="https://github.com/ScalexanderB" target="_blank">
                     <img src="assets/images/4747499_github_icon.svg" alt="Github Logo"/>
                 </a>
@@ -120,8 +124,9 @@
                     <img src="assets/images/104493_linkedin_icon.svg" alt="LinkedIn Logo"/>
                 </a>
                 <a href="mailto:scottabradley91@gmail.com">
-                    <img src="assets/images/211660_email_icon.svg" alt="email icon"/>
+                    <img src="assets/images/103176_mail_email_icon (1).svg" alt="email icon"/>
                 </a>
+                </div>
             </div>
         </div>
     </footer>
